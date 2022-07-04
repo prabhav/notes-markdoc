@@ -4,8 +4,11 @@ import Link from 'next/link';
 
 const items = [
   {
-    title: 'Get started',
-    links: [{href: '/docs', children: 'Overview'}],
+    title: 'Ideas',
+    links: [
+      {href: '/discograph', name: '💽 discograph'},
+      {href: '/footy-boi', name: '⚽ footy boi'}
+    ],
   },
 ];
 
@@ -14,6 +17,12 @@ export function SideNav() {
 
   return (
     <nav className="sidenav">
+      <Link href="/" className="flex">
+        Home
+      </Link>
+
+      <br /><br /><br />
+
       {items.map((item) => (
         <div key={item.title}>
           <span>{item.title}</span>
@@ -23,7 +32,7 @@ export function SideNav() {
               return (
                 <li key={link.href} className={active ? 'active' : ''}>
                   <Link {...link}>
-                    <a href={link.href}>{link.children}</a>
+                    <a href={link.href}>{link.name}</a>
                   </Link>
                 </li>
               );

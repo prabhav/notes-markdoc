@@ -68,9 +68,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <link rel="shortcut icon" href="/favicon.ico" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <TopNav>
+      {/* <TopNav>
         <Link href="/docs">Docs</Link>
-      </TopNav>
+      </TopNav> */}
       <div className="page">
         <SideNav />
         <main className="flex column">
@@ -81,15 +81,15 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <style jsx>
         {`
           .page {
-            position: fixed; 
-            top: var(--top-nav-height);
+            // position: fixed; 
+            // top: var(--top-nav-height);
             display: flex;
             width: 100vw;
             flex-grow: 1;
           }
           main {
             overflow: auto;
-            height: calc(100vh - var(--top-nav-height));
+            // height: calc(100vh - var(--top-nav-height));
             flex-grow: 1;
             font-size: 16px;
             padding: 0 2rem 2rem;

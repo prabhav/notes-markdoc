@@ -13,6 +13,7 @@ export function TableOfContents({toc}) {
   return (
     <nav className="toc">
       <ul className="flex column">
+        this is a table of contents
         {items.map((item) => {
           const href = `#${item.id}`;
           const active =
