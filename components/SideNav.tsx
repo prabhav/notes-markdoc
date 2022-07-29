@@ -6,8 +6,9 @@ const items = [
   {
     title: 'Ideas',
     links: [
+      {href: '/creation', name: 'Creation'},
       {href: '/discograph', name: '💽 discograph'},
-      {href: '/footy-boi', name: '⚽ footy boi'}
+      {href: '/footy-boi', name: '⚽ footy boi'},
     ],
   },
 ];
